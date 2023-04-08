@@ -27,6 +27,11 @@ On another terminar enter on the container and run evans on read eval print loop
 evans -r repl   
 ```
 
+Generating gRPC service by protoc code generator
+```bash
+protoc --go_out=. --go-grpc_out=. proto/course_category.proto
+```
+
 
 
 
