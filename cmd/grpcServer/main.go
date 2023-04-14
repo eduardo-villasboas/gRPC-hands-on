@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"database/sql"
 
 	"github.com/eduardo-villasboas/gRPC-hands-on/internal/database"
@@ -19,6 +21,8 @@ import (
 )
 
 func main() {
+
+	fmt.Println("Initializing proccess")
 
 	db, err := sql.Open("sqlite3", "./db.sqlite")
 	if err != nil {
